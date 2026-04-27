@@ -85,9 +85,8 @@ export default function HeroSlideshow() {
           />
         </div>
 
-        <p className="text-gray-300 text-base sm:text-lg max-w-lg mx-auto leading-relaxed">
-          Where art meets skin. Custom tattoos crafted with precision,
-          passion, and purpose — built to last a lifetime.
+        <p className="font-display text-white text-2xl sm:text-3xl max-w-lg mx-auto leading-relaxed">
+          Welcome to Mo&apos;s Ink
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
