@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AnalyticsTracker from "@/components/AnalyticsTracker";
 
 export const metadata: Metadata = {
   title: "MO's Ink | Professional Tattoo Studio",
@@ -18,6 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        <Suspense fallback={null}>
+          <AnalyticsTracker />
+        </Suspense>
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
