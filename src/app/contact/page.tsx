@@ -2,43 +2,38 @@ const contactDetails = [
   {
     icon: "📍",
     label: "Address",
-    value: "123 Ink Street, Your City, ST 00000",
-    sub: "Walk-ins welcome during studio hours",
+    value: "529 E Center St, Ithaca, MI 48847",
+    sub: "Walk-ins welcome Mon–Fri 12–5pm",
   },
   {
     icon: "📞",
     label: "Phone",
-    value: "(555) 000-0000",
-    sub: "Mon–Sat, 11am – 7pm",
-  },
-  {
-    icon: "✉️",
-    label: "Email",
-    value: "hello@mosink.com",
-    sub: "We reply within 24 hours",
+    value: "(989) 330-8991",
+    sub: "Call or text anytime",
   },
   {
     icon: "📘",
     label: "Facebook",
-    value: "facebook.com/Mos1nk",
+    value: "Mo's Ink",
     sub: "Follow us for updates & promos",
     href: "https://www.facebook.com/Mos1nk",
   },
   {
     icon: "📸",
     label: "Instagram",
-    value: "@mosink.tattoo",
+    value: "@mos.artnstuff",
     sub: "Follow for daily work updates",
+    href: "https://www.instagram.com/mos.artnstuff",
   },
 ];
 
 const hours = [
-  { day: "Monday", time: "11am – 8pm" },
-  { day: "Tuesday", time: "11am – 8pm" },
-  { day: "Wednesday", time: "11am – 8pm" },
-  { day: "Thursday", time: "11am – 8pm" },
-  { day: "Friday", time: "11am – 8pm" },
-  { day: "Saturday", time: "10am – 6pm" },
+  { day: "Monday", time: "12pm – 5pm (appt after 5)" },
+  { day: "Tuesday", time: "12pm – 5pm (appt after 5)" },
+  { day: "Wednesday", time: "12pm – 5pm (appt after 5)" },
+  { day: "Thursday", time: "12pm – 5pm (appt after 5)" },
+  { day: "Friday", time: "12pm – 5pm (appt after 5)" },
+  { day: "Saturday", time: "By Appointment" },
   { day: "Sunday", time: "By Appointment" },
 ];
 
@@ -211,7 +206,7 @@ export default function ContactPage() {
             <div className="text-center relative z-10">
               <span className="text-4xl">📍</span>
               <p className="text-gray-400 mt-3 text-sm">
-                Map coming soon — 123 Ink Street, Your City
+                529 E Center St, Ithaca, MI 48847
               </p>
             </div>
           </div>

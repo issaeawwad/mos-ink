@@ -52,14 +52,13 @@ export default function Footer() {
               Studio Hours
             </h3>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>Mon – Fri: 11am – 8pm</li>
-              <li>Saturday: 10am – 6pm</li>
-              <li>Sunday: By Appointment</li>
+              <li>Mon – Fri: 12pm – 5pm</li>
+              <li>Mon – Fri after 5pm: Appointment Only</li>
+              <li>Weekends: Appointment Only</li>
             </ul>
             <div className="mt-4 space-y-1 text-sm text-gray-400">
-              <p>📍 123 Ink Street, Your City</p>
-              <p>📞 (555) 000-0000</p>
-              <p>✉️ hello@mosink.com</p>
+              <p>📍 529 E Center St, Ithaca, MI 48847</p>
+              <p>📞 (989) 330-8991</p>
             </div>
           </div>
         </div>
@@ -70,7 +69,9 @@ export default function Footer() {
           </p>
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://www.instagram.com/mos.artnstuff"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-500 hover:text-purple-400 text-sm transition-colors duration-200"
             >
               Instagram
@@ -82,12 +83,6 @@ export default function Footer() {
               className="text-gray-500 hover:text-purple-400 text-sm transition-colors duration-200"
             >
               Facebook
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-purple-400 text-sm transition-colors duration-200"
-            >
-              TikTok
             </a>
           </div>
         </div>
