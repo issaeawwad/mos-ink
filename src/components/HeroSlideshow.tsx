@@ -104,11 +104,6 @@ export default function HeroSlideshow() {
           </Link>
         </div>
 
-        {/* Slide label */}
-        <p className="mt-8 text-purple-300/70 text-xs uppercase tracking-widest">
-          {slides[current].label}
-        </p>
-
         {/* Dot indicators */}
         <div className="flex gap-2 mt-4">
           {slides.map((_, i) => (

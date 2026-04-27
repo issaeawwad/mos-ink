@@ -45,15 +45,6 @@ export default function HomePage() {
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/60">
-                  <span className="text-white font-semibold">{item.label}</span>
-                  <span className="text-purple-400 text-sm mt-1">{item.style}</span>
-                </div>
-                <div className="absolute bottom-3 left-3">
-                  <span className="text-xs text-purple-400 bg-black/70 px-2 py-1 rounded">
-                    {item.style}
-                  </span>
-                </div>
               </div>
             ))}
           </div>
