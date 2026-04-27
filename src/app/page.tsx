@@ -25,9 +25,12 @@ const features = [
 ];
 
 const recentWork = [
-  { src: "/images/tattoo-3.jpg", label: "Lion Realism", style: "Black & Grey" },
-  { src: "/images/tattoo-1.jpg", label: "Flash Designs", style: "Flash Art" },
-  { src: "/images/tattoo-2.jpg", label: "Flash Collection", style: "Flash Art" },
+  { src: "/images/tattoo-3.jpg",  label: "Lion",              style: "Black & Grey Realism" },
+  { src: "/images/IMG_2423.jpg",  label: "Dragon & Peonies",  style: "Colour" },
+  { src: "/images/IMG_6902.jpg",  label: "Elephant in Flames",style: "Colour" },
+  { src: "/images/GALLERY_A.jpg", label: "Memorial Floral",   style: "Black & Grey" },
+  { src: "/images/IMG_6880.jpg",  label: "Butterflies",       style: "Watercolour" },
+  { src: "/images/GALLERY_B.jpg", label: "Snake & Heart",     style: "Fine Line" },
 ];
 
 export default function HomePage() {
@@ -116,11 +119,11 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {recentWork.map((item, i) => (
               <div
                 key={i}
-                className="relative aspect-[4/3] bg-[#111118] rounded-xl overflow-hidden group border border-purple-900/30 hover:border-purple-600/60 transition-colors duration-300"
+                className="relative aspect-[4/5] bg-[#111118] rounded-xl overflow-hidden group border border-purple-900/30 hover:border-purple-600/60 transition-colors duration-300"
               >
                 <Image
                   src={item.src}
