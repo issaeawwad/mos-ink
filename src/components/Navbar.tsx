@@ -28,6 +28,7 @@ export default function Navbar() {
               width={140}
               height={56}
               className="h-16 w-auto object-contain opacity-95 group-hover:opacity-100 transition-opacity duration-300"
+              style={{ filter: "sepia(1) saturate(4) hue-rotate(225deg)" }}
               priority
             />
           </Link>

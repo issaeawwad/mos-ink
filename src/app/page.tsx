@@ -2,28 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import HeroSlideshow from "@/components/HeroSlideshow";
 
-const features = [
-  {
-    icon: "✦",
-    title: "Custom Designs",
-    desc: "Every tattoo is crafted exclusively for you — no flash, no repeats.",
-  },
-  {
-    icon: "✦",
-    title: "Fine Line & Realism",
-    desc: "Specialising in intricate fine-line work and hyper-realistic portraits.",
-  },
-  {
-    icon: "✦",
-    title: "Cover-Ups",
-    desc: "Transform old ink into something you'll love again.",
-  },
-  {
-    icon: "✦",
-    title: "Safe & Sterile",
-    desc: "Hospital-grade sterilisation and single-use equipment every time.",
-  },
-];
 
 const recentWork = [
   { src: "/images/tattoo-3.jpg",  label: "Lion",               style: "Black & Grey Realism" },
@@ -40,32 +18,6 @@ export default function HomePage() {
       {/* Hero — full-screen animated slideshow */}
       <HeroSlideshow />
 
-      {/* Features */}
-      <section className="py-24 px-4 max-w-7xl mx-auto">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white">
-            Why Choose{" "}
-            <span className="text-purple-400">MO&apos;s Ink</span>
-          </h2>
-          <div className="mt-3 w-16 h-0.5 bg-purple-600 mx-auto" />
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((f) => (
-            <div
-              key={f.title}
-              className="gradient-border rounded-xl p-6 bg-[#0f0f18] hover:bg-[#12121e] transition-colors duration-200 group"
-            >
-              <span className="text-purple-500 text-2xl block mb-4 group-hover:text-purple-300 transition-colors">
-                {f.icon}
-              </span>
-              <h3 className="text-white font-semibold text-lg mb-2">
-                {f.title}
-              </h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{f.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* Recent Work preview */}
       <section className="py-20 px-4 bg-[#07070d]">

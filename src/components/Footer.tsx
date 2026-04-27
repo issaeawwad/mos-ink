@@ -14,6 +14,7 @@ export default function Footer() {
               width={160}
               height={64}
               className="h-14 w-auto object-contain mb-4 opacity-90"
+              style={{ filter: "sepia(1) saturate(4) hue-rotate(225deg)" }}
             />
             <p className="text-gray-400 text-sm leading-relaxed">
               Professional tattoo artistry rooted in precision, passion, and

@@ -80,6 +80,7 @@ export default function HeroSlideshow() {
             width={420}
             height={168}
             className="w-64 sm:w-80 md:w-96 h-auto object-contain"
+            style={{ filter: "sepia(1) saturate(4) hue-rotate(225deg)" }}
             priority
           />
         </div>
