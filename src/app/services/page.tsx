@@ -3,44 +3,32 @@ import Link from "next/link";
 const services = [
   {
     name: "Custom Design",
-    price: "From $150",
-    duration: "1–4 hrs",
     desc: "Fully original artwork designed exclusively for you. Bring references, ideas, or just a vibe — we'll create something unique.",
     included: ["Free consultation", "Custom sketch", "Unlimited revisions", "Aftercare kit"],
   },
   {
     name: "Fine Line",
-    price: "From $120",
-    duration: "1–3 hrs",
     desc: "Delicate, precise linework for minimal designs, botanical art, script, and intricate details.",
     included: ["Custom design", "Single-needle option", "Touch-up included", "Aftercare kit"],
   },
   {
     name: "Realism / Portrait",
-    price: "From $300",
-    duration: "3–8 hrs",
     desc: "Hyper-realistic portraits and detailed scenes rendered in black & grey or full colour.",
     included: ["Reference review", "Detailed draft", "Multi-session planning", "Aftercare kit"],
   },
   {
     name: "Cover-Up",
-    price: "From $200",
-    duration: "2–5 hrs",
     desc: "Turn unwanted ink into something you love. We assess your existing tattoo and design a custom solution.",
     included: ["Free cover-up consultation", "Before/after preview", "Touch-up session", "Aftercare kit"],
   },
   {
     name: "Blackwork / Tribal",
-    price: "From $180",
-    duration: "2–6 hrs",
     desc: "Bold, graphic designs with strong black ink. Tribal patterns, geometric fills, and ornamental styles.",
     included: ["Custom layout", "Reference gathering", "Session planning", "Aftercare kit"],
   },
   {
     name: "Touch-Up",
-    price: "From $60",
-    duration: "30–60 min",
-    desc: "Refresh faded lines, fill in colour, or sharpen details on existing tattoos (not done here).",
+    desc: "Refresh faded lines, fill in colour, or sharpen details on existing tattoos.",
     included: ["Assessment", "Colour matching", "Ink top-up"],
   },
 ];
@@ -77,12 +65,12 @@ export default function ServicesPage() {
             What We Offer
           </p>
           <h1 className="text-4xl sm:text-6xl font-black text-white">
-            Services &amp; <span className="text-purple-500">Pricing</span>
+            Our <span className="text-purple-500">Services</span>
           </h1>
           <div className="mt-3 w-16 h-0.5 bg-purple-600 mx-auto" />
           <p className="text-gray-400 mt-5 max-w-xl mx-auto text-sm sm:text-base">
-            Transparent pricing, no surprises. All sessions begin with a free
-            consultation so we can quote accurately for your specific piece.
+            Every session begins with a free consultation so we can understand
+            your vision and bring it to life exactly how you imagined.
           </p>
         </div>
       </div>
@@ -95,13 +83,7 @@ export default function ServicesPage() {
               key={s.name}
               className="gradient-border rounded-xl p-6 bg-[#0f0f18] hover:bg-[#12121e] transition-colors duration-200 flex flex-col"
             >
-              <div className="flex items-start justify-between mb-4">
-                <h3 className="text-white font-bold text-xl">{s.name}</h3>
-                <div className="text-right">
-                  <div className="text-purple-400 font-bold">{s.price}</div>
-                  <div className="text-gray-500 text-xs">{s.duration}</div>
-                </div>
-              </div>
+              <h3 className="text-white font-bold text-xl mb-4">{s.name}</h3>
               <p className="text-gray-400 text-sm leading-relaxed mb-5 flex-1">
                 {s.desc}
               </p>
@@ -135,10 +117,7 @@ export default function ServicesPage() {
           </div>
           <div className="space-y-4">
             {faqs.map((faq) => (
-              <div
-                key={faq.q}
-                className="gradient-border rounded-xl p-6 bg-[#0f0f18]"
-              >
+              <div key={faq.q} className="gradient-border rounded-xl p-6 bg-[#0f0f18]">
                 <h4 className="text-white font-semibold mb-2">{faq.q}</h4>
                 <p className="text-gray-400 text-sm leading-relaxed">{faq.a}</p>
               </div>
@@ -154,7 +133,7 @@ export default function ServicesPage() {
         </h2>
         <p className="text-gray-400 mb-8 max-w-md mx-auto text-sm">
           Book a free consultation and we&apos;ll help figure out the best
-          approach for your idea and budget.
+          approach for your idea.
         </p>
         <Link
           href="/book"
