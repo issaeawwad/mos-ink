@@ -68,9 +68,9 @@ export default function ContactPage() {
           <div className="space-y-8">
             {/* Contact details */}
             <div>
-              <h2 className="text-white font-bold text-xl mb-6">
+              <p className="font-body text-white font-bold text-xl mb-6">
                 Studio Info
-              </h2>
+              </p>
               <div className="space-y-4">
                 {contactDetails.map((c) => (
                   <div
@@ -98,9 +98,9 @@ export default function ContactPage() {
 
             {/* Hours */}
             <div>
-              <h2 className="text-white font-bold text-xl mb-6">
+              <p className="font-body text-white font-bold text-xl mb-6">
                 Studio Hours
-              </h2>
+              </p>
               <div className="gradient-border rounded-xl bg-[#0f0f18] overflow-hidden">
                 {hours.map((h, i) => (
                   <div
@@ -131,7 +131,7 @@ export default function ContactPage() {
           <div>
             <h2 className="text-white font-bold text-xl mb-6">
               Send a Message
-            </h2>
+            </p>
             <ContactForm />
           </div>
         </div>

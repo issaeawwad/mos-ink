@@ -24,9 +24,9 @@ export default function Footer() {
 
           {/* Quick links */}
           <div>
-            <h3 className="text-purple-400 font-semibold mb-4 uppercase tracking-widest text-xs">
+            <p className="font-body text-purple-400 font-semibold mb-4 uppercase tracking-widest text-xs">
               Quick Links
-            </h3>
+            </p>
             <ul className="space-y-2">
               {[
                 { href: "/", label: "Home" },
@@ -48,9 +48,9 @@ export default function Footer() {
 
           {/* Contact info */}
           <div>
-            <h3 className="text-purple-400 font-semibold mb-4 uppercase tracking-widest text-xs">
+            <p className="font-body text-purple-400 font-semibold mb-4 uppercase tracking-widest text-xs">
               Studio Hours
-            </h3>
+            </p>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>Mon – Fri: 12pm – 5pm</li>
               <li>Mon – Fri after 5pm: Appointment Only</li>
