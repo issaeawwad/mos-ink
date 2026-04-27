@@ -1,3 +1,5 @@
+import ContactForm from "@/components/ContactForm";
+
 const contactDetails = [
   {
     icon: "📍",
@@ -130,66 +132,7 @@ export default function ContactPage() {
             <h2 className="text-white font-bold text-xl mb-6">
               Send a Message
             </h2>
-            <form className="gradient-border rounded-2xl p-8 bg-[#0f0f18] space-y-5">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm text-gray-400 mb-2" htmlFor="cName">
-                    Name <span className="text-purple-500">*</span>
-                  </label>
-                  <input
-                    id="cName"
-                    type="text"
-                    required
-                    placeholder="Your name"
-                    className="w-full bg-[#0a0a0f] border border-purple-900/50 focus:border-purple-500 rounded-md px-4 py-3 text-white placeholder-gray-600 text-sm outline-none transition-colors"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm text-gray-400 mb-2" htmlFor="cEmail">
-                    Email <span className="text-purple-500">*</span>
-                  </label>
-                  <input
-                    id="cEmail"
-                    type="email"
-                    required
-                    placeholder="you@example.com"
-                    className="w-full bg-[#0a0a0f] border border-purple-900/50 focus:border-purple-500 rounded-md px-4 py-3 text-white placeholder-gray-600 text-sm outline-none transition-colors"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm text-gray-400 mb-2" htmlFor="cSubject">
-                  Subject
-                </label>
-                <input
-                  id="cSubject"
-                  type="text"
-                  placeholder="What's this about?"
-                  className="w-full bg-[#0a0a0f] border border-purple-900/50 focus:border-purple-500 rounded-md px-4 py-3 text-white placeholder-gray-600 text-sm outline-none transition-colors"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm text-gray-400 mb-2" htmlFor="cMessage">
-                  Message <span className="text-purple-500">*</span>
-                </label>
-                <textarea
-                  id="cMessage"
-                  required
-                  rows={6}
-                  placeholder="Tell us what's on your mind…"
-                  className="w-full bg-[#0a0a0f] border border-purple-900/50 focus:border-purple-500 rounded-md px-4 py-3 text-white placeholder-gray-600 text-sm outline-none transition-colors resize-none"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full py-4 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-md transition-all duration-200 glow-purple"
-              >
-                Send Message
-              </button>
-            </form>
+            <ContactForm />
           </div>
         </div>
 
