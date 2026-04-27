@@ -2,26 +2,26 @@ import ContactForm from "@/components/ContactForm";
 
 const contactDetails = [
   {
-    icon: "📍",
+    icon: "◈",
     label: "Address",
     value: "529 E Center St, Ithaca, MI 48847",
     sub: "Walk-ins welcome Mon–Fri 12–5pm",
   },
   {
-    icon: "📞",
+    icon: "◈",
     label: "Phone",
     value: "(989) 330-8991",
     sub: "Call or text anytime",
   },
   {
-    icon: "📘",
+    icon: "◈",
     label: "Facebook",
     value: "Mo's Ink",
     sub: "Follow us for updates & promos",
     href: "https://www.facebook.com/Mos1nk",
   },
   {
-    icon: "📸",
+    icon: "◈",
     label: "Instagram",
     value: "@mos.artnstuff",
     sub: "Follow for daily work updates",
@@ -129,7 +129,7 @@ export default function ContactPage() {
 
           {/* Right — contact form */}
           <div>
-            <h2 className="text-white font-bold text-xl mb-6">
+            <p className="font-body text-white font-bold text-xl mb-6">
               Send a Message
             </p>
             <ContactForm />
