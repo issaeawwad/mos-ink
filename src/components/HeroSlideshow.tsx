@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 
 const slides = [
   { src: "/images/tattoo-3.jpg",   label: "Lion · Black & Grey Realism" },
-  { src: "/images/IMG_2423.jpg",   label: "Dragon & Peonies · Colour" },
-  { src: "/images/IMG_6902.jpg",   label: "Elephant in Flames · Colour" },
+  { src: "/images/IMG_2423.jpg",   label: "Dragon & Peonies · Color" },
+  { src: "/images/IMG_6902.jpg",   label: "Elephant in Flames · Color" },
   { src: "/images/GALLERY_A.jpg",  label: "Memorial Floral · Black & Grey" },
   { src: "/images/IMG_6880.jpg",   label: "Butterflies · Watercolour" },
   { src: "/images/GALLERY_B.jpg",  label: "Snake & Heart · Fine Line" },

@@ -13,7 +13,7 @@ const services = [
   },
   {
     name: "Realism / Portrait",
-    desc: "Hyper-realistic portraits and detailed scenes rendered in black & grey or full colour.",
+    desc: "Hyper-realistic portraits and detailed scenes rendered in black & grey or full color.",
     included: ["Reference review", "Detailed draft", "Multi-session planning", "Aftercare kit"],
   },
   {
@@ -28,8 +28,8 @@ const services = [
   },
   {
     name: "Touch-Up",
-    desc: "Refresh faded lines, fill in colour, or sharpen details on existing tattoos.",
-    included: ["Assessment", "Colour matching", "Ink top-up"],
+    desc: "Refresh faded lines, fill in color, or sharpen details on existing tattoos.",
+    included: ["Assessment", "Color matching", "Ink top-up"],
   },
 ];
 

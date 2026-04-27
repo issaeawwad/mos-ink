@@ -5,8 +5,8 @@ import HeroSlideshow from "@/components/HeroSlideshow";
 
 const recentWork = [
   { src: "/images/tattoo-3.jpg",  label: "Lion",               style: "Black & Grey Realism" },
-  { src: "/images/IMG_2423.jpg",  label: "Dragon & Peonies",   style: "Colour" },
-  { src: "/images/IMG_6902.jpg",  label: "Elephant in Flames", style: "Colour" },
+  { src: "/images/IMG_2423.jpg",  label: "Dragon & Peonies",   style: "Color" },
+  { src: "/images/IMG_6902.jpg",  label: "Elephant in Flames", style: "Color" },
   { src: "/images/GALLERY_A.jpg", label: "Memorial Floral",    style: "Black & Grey" },
   { src: "/images/IMG_6880.jpg",  label: "Butterflies",        style: "Watercolour" },
   { src: "/images/GALLERY_B.jpg", label: "Snake & Heart",      style: "Fine Line" },

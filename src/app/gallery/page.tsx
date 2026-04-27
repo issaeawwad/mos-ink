@@ -6,7 +6,7 @@ const galleryItems = [
   { src: "/images/GALLERY_B.jpg", alt: "Snake and heart tattoo" },
   { src: "/images/IMG_2423.jpg",  alt: "Dragon and peonies tattoo" },
   { src: "/images/IMG_6902.jpg",  alt: "Elephant in flames tattoo" },
-  { src: "/images/IMG_6880.jpg",  alt: "Butterflies watercolour tattoo" },
+  { src: "/images/IMG_6880.jpg",  alt: "Butterflies watercolor tattoo" },
   { src: "/images/IMG_6447.jpg",  alt: "Moon phases tattoo" },
   { src: "/images/IMG_6458.jpg",  alt: "Raccoon realism tattoo" },
   { src: "/images/IMG_2629.jpg",  alt: "Rose and blossoms tattoo" },
