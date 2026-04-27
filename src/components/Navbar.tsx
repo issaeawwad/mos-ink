@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-purple-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <Image
@@ -28,7 +28,7 @@ export default function Navbar() {
               alt="MO's Ink Tattoos"
               width={140}
               height={56}
-              className="h-12 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+              className="h-16 w-auto object-contain opacity-95 group-hover:opacity-100 transition-opacity duration-300"
               priority
             />
           </Link>

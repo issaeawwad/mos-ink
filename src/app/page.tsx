@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import HeroSlideshow from "@/components/HeroSlideshow";
 
 const features = [
   {
@@ -25,59 +26,19 @@ const features = [
 ];
 
 const recentWork = [
-  { src: "/images/tattoo-3.jpg",  label: "Lion",              style: "Black & Grey Realism" },
-  { src: "/images/IMG_2423.jpg",  label: "Dragon & Peonies",  style: "Colour" },
-  { src: "/images/IMG_6902.jpg",  label: "Elephant in Flames",style: "Colour" },
-  { src: "/images/GALLERY_A.jpg", label: "Memorial Floral",   style: "Black & Grey" },
-  { src: "/images/IMG_6880.jpg",  label: "Butterflies",       style: "Watercolour" },
-  { src: "/images/GALLERY_B.jpg", label: "Snake & Heart",     style: "Fine Line" },
+  { src: "/images/tattoo-3.jpg",  label: "Lion",               style: "Black & Grey Realism" },
+  { src: "/images/IMG_2423.jpg",  label: "Dragon & Peonies",   style: "Colour" },
+  { src: "/images/IMG_6902.jpg",  label: "Elephant in Flames", style: "Colour" },
+  { src: "/images/GALLERY_A.jpg", label: "Memorial Floral",    style: "Black & Grey" },
+  { src: "/images/IMG_6880.jpg",  label: "Butterflies",        style: "Watercolour" },
+  { src: "/images/GALLERY_B.jpg", label: "Snake & Heart",      style: "Fine Line" },
 ];
 
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-        {/* Background gradient orbs */}
-        <div className="absolute inset-0 bg-[#0a0a0f]">
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-purple-900/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-purple-700/10 rounded-full blur-3xl" />
-        </div>
-
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <p className="text-purple-400 uppercase tracking-[0.3em] text-sm font-medium mb-6">
-            Professional Tattoo Studio
-          </p>
-          <h1 className="text-6xl sm:text-8xl font-black tracking-tight text-white mb-4 leading-none">
-            MO&apos;S{" "}
-            <span className="text-purple-500 glow-text">INK</span>
-          </h1>
-          <p className="text-gray-400 text-lg sm:text-xl max-w-xl mx-auto mt-6 leading-relaxed">
-            Where art meets skin. Custom tattoos crafted with precision,
-            passion, and purpose — built to last a lifetime.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-            <Link
-              href="/book"
-              className="px-8 py-4 bg-purple-600 hover:bg-purple-500 text-white font-semibold rounded-md transition-all duration-200 glow-purple text-base"
-            >
-              Book Your Session
-            </Link>
-            <Link
-              href="/gallery"
-              className="px-8 py-4 border border-purple-700 hover:border-purple-400 text-purple-300 hover:text-white font-semibold rounded-md transition-all duration-200 text-base"
-            >
-              View Gallery
-            </Link>
-          </div>
-        </div>
-
-        {/* Scroll hint */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-600 text-xs uppercase tracking-widest">
-          <span>Scroll</span>
-          <div className="w-px h-8 bg-gradient-to-b from-gray-600 to-transparent" />
-        </div>
-      </section>
+      {/* Hero — full-screen animated slideshow */}
+      <HeroSlideshow />
 
       {/* Features */}
       <section className="py-24 px-4 max-w-7xl mx-auto">
@@ -130,7 +91,7 @@ export default function HomePage() {
                   alt={item.label}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 768px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/60">
                   <span className="text-white font-semibold">{item.label}</span>
