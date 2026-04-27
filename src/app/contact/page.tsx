@@ -193,23 +193,23 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* Map placeholder */}
+        {/* Map */}
         <div className="mt-14">
-          <div className="w-full h-64 rounded-2xl bg-[#0f0f18] border border-purple-900/40 flex items-center justify-center relative overflow-hidden">
-            <div
-              className="absolute inset-0 opacity-5"
-              style={{
-                backgroundImage: `linear-gradient(rgba(147,51,234,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(147,51,234,0.3) 1px, transparent 1px)`,
-                backgroundSize: "40px 40px",
-              }}
+          <div className="w-full rounded-2xl overflow-hidden border border-purple-900/40" style={{ height: "420px" }}>
+            <iframe
+              title="MO's Ink Location"
+              src="https://maps.google.com/maps?q=529+E+Center+St,+Ithaca,+MI+48847&output=embed&z=16"
+              width="100%"
+              height="100%"
+              style={{ border: 0, filter: "invert(90%) hue-rotate(200deg) saturate(0.8)" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             />
-            <div className="text-center relative z-10">
-              <span className="text-4xl">📍</span>
-              <p className="text-gray-400 mt-3 text-sm">
-                529 E Center St, Ithaca, MI 48847
-              </p>
-            </div>
           </div>
+          <p className="text-gray-500 text-xs text-center mt-3">
+            529 E Center St, Ithaca, MI 48847
+          </p>
         </div>
       </div>
     </div>
