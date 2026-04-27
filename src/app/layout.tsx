@@ -1,9 +1,23 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import { Pinyon_Script, Raleway } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnalyticsTracker from "@/components/AnalyticsTracker";
+
+const pinyonScript = Pinyon_Script({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "MO's Ink | Professional Tattoo Studio",
@@ -18,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${pinyonScript.variable} ${raleway.variable}`}>
       <body className="antialiased">
         <Suspense fallback={null}>
           <AnalyticsTracker />
